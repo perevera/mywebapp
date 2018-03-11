@@ -1,0 +1,11 @@
+[Unit]
+Description=My Web Application
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/test/master.tar.gz
+ExecStart=/usr/bin/python3 -m http.server --cgi 8080
+ExecStop=/bin/kill -15 $(pgrep -f http.server)
+
+[Install]
+WantedBy=multi-user.target
