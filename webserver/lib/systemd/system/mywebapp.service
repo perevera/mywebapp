@@ -3,7 +3,7 @@ Description=My Web Application
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/test/master.tar.gz
+WorkingDirectory=/opt/test
 ExecStart=/usr/bin/python3 -m http.server --cgi 8080
 ExecStop=/bin/kill -15 $(pgrep -f http.server)
 

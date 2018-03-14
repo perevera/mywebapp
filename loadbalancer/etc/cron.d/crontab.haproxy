@@ -1,0 +1,1 @@
+*/3 * * * * /home/ubuntu/config_haproxy.sh 1>&2
